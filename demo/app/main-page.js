@@ -5,7 +5,7 @@ import {
   requestCallPermission,
   SMSEvents,
   DialEvents
-} from 'nativescript-phone';
+} from '@unitehere/nativescript-phone';
 import { Observable } from '@nativescript/core';
 const vm = new Observable();
 

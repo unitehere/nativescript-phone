@@ -1,5 +1,5 @@
-[![npm](https://img.shields.io/npm/v/nativescript-phone.svg)](https://www.npmjs.com/package/nativescript-phone)
-[![npm](https://img.shields.io/npm/dt/nativescript-phone.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-phone)
+[![npm](https://img.shields.io/npm/v/nativescript-phone.svg)](https://www.npmjs.com/package/@unitehere/nativescript-phone)
+[![npm](https://img.shields.io/npm/dt/nativescript-phone.svg?label=npm%20downloads)](https://www.npmjs.com/package/@unitehere/nativescript-phone)
 
 # NativeScript Phone
 
@@ -15,7 +15,7 @@ NativeScript plugin to use the device phone and SMS features for Android and iOS
 Install the plugin using the NativeScript CLI
 
 ```
-tns plugin add nativescript-phone
+tns plugin add @unitehere/nativescript-phone
 ```
 
 ### Breaking Change with 3.x.x
@@ -52,7 +52,7 @@ You must add the following line to your project's Info.plist
 To use the phone module you must first `require()` it from your project's `node_modules` directory:
 
 ```js
-var phone = require('nativescript-phone');
+var phone = require('@unitehere/nativescript-phone');
 ```
 
 After you have a reference to the module you can then call the available methods.
@@ -70,7 +70,7 @@ For example, the code below dials the number without showing the device specific
 
 ```js
 // my-page.js
-var phone = require('nativescript-phone');
+var phone = require('@unitehere/nativescript-phone');
 phone.dial('212-555-1234', false);
 ```
 
@@ -95,7 +95,7 @@ import {
   requestCallPermission,
   SMSEvents,
   DialEvents
-} from 'nativescript-phone';
+} from '@unitehere/nativescript-phone';
 
 NSPhoneEventEmitter.on(SMSEvents.FAILED, args => {
   console.log('FAILED', args.data);
@@ -123,7 +123,7 @@ sms(['212-555-1234'], 'testing');
 Send to multiple numbers
 
 ```js
-import { sms } from 'nativescript-phone';
+import { sms } from '@unitehere/nativescript-phone';
 // Use the event system to listen for failure, success, cancelled, error events
 
 sms(['212-555-1234', '212-555-1245'], 'My Message');
@@ -149,7 +149,7 @@ import {
   requestCallPermission,
   SMSEvents,
   DialEvents
-} from 'nativescript-phone';
+} from '@unitehere/nativescript-phone';
 
 NSPhoneEventEmitter.on(SMSEvents.ERROR, args => {
   console.log('SMS ERROR', args.data);
