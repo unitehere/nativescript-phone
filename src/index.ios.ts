@@ -81,7 +81,11 @@ export function dial(telNum, prompt) {
     const url = NSURL.URLWithString(sURL + telNum);
 
     if (UIApplication.sharedApplication.canOpenURL(url)) {
-      UIApplication.sharedApplication.openURL(url);
+      UIApplication.sharedApplication.openURLOptionsCompletionHandler(
+        url,
+        null,
+        () => {}
+      );
       NSPhoneEventEmitter.notify({
         eventName: DialEvents.SUCCESS
       });
