@@ -1,12 +1,12 @@
 {
-  "name": "nativescript-phone",
-  "version": "3.0.4",
+  "name": "@unitehere/nativescript-phone",
+  "version": "3.1.0",
   "description": "NativeScript plugin to use the device phone and SMS features for Android and iOS",
   "main": "index",
   "typings": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/msywensky/nativescript-phone.git"
+    "url": "https://github.com/unitehere/nativescript-phone.git"
   },
   "keywords": [
     "NativeScript",
@@ -22,8 +22,8 @@
     "demo.ios": "cd ../demo && ns run ios",
     "demo.android": "cd ../demo && ns run android",
     "demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
-    "development.setup": "npm run setup && npm link && cd ../demo && npm link nativescript-phone && cd ../src",
-    "plugin.prepare": "npm run build.native && cd ../demo && ns plugin remove nativescript-phone && ns plugin add ../src"
+    "development.setup": "npm run setup && npm link && cd ../demo && npm link @unitehere/nativescript-phone && cd ../src",
+    "plugin.prepare": "npm run build.native && cd ../demo && ns plugin remove @unitehere/nativescript-phone && ns plugin add ../src"
   },
   "lint-staged": {
     "**/*.{js, css, ts, json, scss, html, xml, md}": [
@@ -67,9 +67,9 @@
   "readmeFilename": "README.md",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/msywensky/nativescript-phone/issues"
+    "url": "https://github.com/unitehere/nativescript-phone/issues"
   },
-  "homepage": "https://github.com/msywensky/nativescript-phone",
+  "homepage": "https://github.com/unitehere/nativescript-phone",
   "nativescript": {
     "platforms": {
       "android": "1.0.0",
