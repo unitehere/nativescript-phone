@@ -1,6 +1,6 @@
 {
   "name": "@unitehere/nativescript-phone",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "NativeScript plugin to use the device phone and SMS features for Android and iOS",
   "main": "index",
   "typings": "index.d.ts",

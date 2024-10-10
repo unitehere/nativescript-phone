@@ -15,7 +15,7 @@
   "dependencies": {
     "@nativescript/core": "~8.0.0",
     "@nativescript/theme": "~3.0.1",
-    "@unitehere/nativescript-phone": "file:../publish/package/unitehere-nativescript-phone-3.1.0.tgz"
+    "@unitehere/nativescript-phone": "file:../publish/package/unitehere-nativescript-phone-3.2.0.tgz"
   },
   "devDependencies": {
     "@nativescript/android": "8.2.4",
